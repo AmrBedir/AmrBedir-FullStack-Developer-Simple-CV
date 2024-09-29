@@ -57,7 +57,7 @@ h2 {
 	margin-bottom: 20px;
 }
 
-/* Navigation */
+/* General Navigation Styles */
 nav {
 	background-color: #19486A;
 	padding: 12px;
@@ -68,6 +68,8 @@ nav ul {
 	list-style: none;
 	display: flex;
 	justify-content: center;
+	margin: 0;
+	padding: 0;
 }
 
 nav ul li {
@@ -78,11 +80,63 @@ nav ul li a {
 	color: white;
 	font-size: 1.1em;
 	text-decoration: none;
-	/* Remove link underline */
 }
 
 nav ul li a:hover {
 	text-decoration: none;
+}
+
+/* Responsive Menu Icon (hamburger) */
+.nav-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.nav-icon {
+	display: none;
+	font-size: 1.5em;
+	color: white;
+	right: 20px;
+	top: 15px;
+	cursor: pointer;
+}
+
+/* Hide the checkbox by default */
+.nav-toggle {
+	display: none;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+
+	/* Show the hamburger icon */
+	.nav-icon {
+		display: block;
+	}
+
+	/* Hide the nav items initially */
+	nav ul {
+		display: none;
+		flex-direction: column;
+		text-align: left;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		width: 100%;
+		background-color: #19486A;
+		padding: 10px;
+	}
+
+	/* Show the nav items when checkbox is checked */
+	.nav-toggle:checked+.nav-icon+ul {
+		display: flex;
+	}
+
+	nav ul li {
+		margin: 10px 0;
+	}
 }
 
 /* Header */
@@ -353,14 +407,16 @@ main {
 .social-media a {
 	margin: 0 5px;
 	font-size: 1.5rem;
-	color: #19486A; /* You can match your primary color scheme */
+	color: #19486A;
+	/* You can match your primary color scheme */
 	text-decoration: none;
-  }
-  
-  .social-media a:hover {
-	color: #26BDE2; /* Change color on hover */
-  }
-  
+}
+
+.social-media a:hover {
+	color: #26BDE2;
+	/* Change color on hover */
+}
+
 
 /* Send Message Button */
 .contact-form button {
@@ -415,7 +471,7 @@ footer {
 	padding: 12px;
 	background-color: #19486A;
 	color: white;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 footer a {
