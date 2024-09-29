@@ -1,5 +1,7 @@
 # Amr Bedir | Full-Stack Developer Simple CV
 
+![ScreenShot](screenshot.webp)
+
 ## About
 This is a simple CV as a Full-Stack Developer. It showcases about, skills, projects, and professional experience in web development, providing a concise overview of my capabilities.
 
