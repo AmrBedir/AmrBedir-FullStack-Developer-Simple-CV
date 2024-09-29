@@ -307,8 +307,8 @@ main {
 	/* Center horizontally */
 	align-items: center;
 	/* Center vertically, if needed */
-	width: 90vw;
-	/* Set width to 90% of the viewport width */
+	width: 70vw;
+	/* Set width to 70% of the viewport width */
 	margin: 0 auto;
 	/* Center the element in its container */
 }
