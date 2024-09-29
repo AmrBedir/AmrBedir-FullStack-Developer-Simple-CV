@@ -253,7 +253,7 @@ main {
 	/* Center horizontally */
 	align-items: center;
 	/* Center vertically, if needed */
-	width: 70vw;
+	width: 90vw;
 	/* Set width to 90% of the viewport width */
 	margin: 0 auto;
 	/* Center the element in its container */
@@ -266,6 +266,43 @@ main {
 	/* Maintain aspect ratio */
 }
 
+/* Blogs Section */
+#blogs {
+	padding: 40px 20px;
+}
+
+.blogs-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+}
+
+.blogs-item {
+	background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.blogs-item img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.blogs-item:hover {
+	transform: translateY(-10px);
+}
+
+.blogs-content {
+	padding: 20px;
+}
+
+.blogs-item h3 {
+	margin-bottom: 10px;
+	color: #19486A;
+}
 
 /* Contact Section */
 #contact {
@@ -312,6 +349,18 @@ main {
 	background-color: transparent;
 	/* Keeps the contact info unchanged */
 }
+
+.social-media a {
+	margin: 0 5px;
+	font-size: 1.5rem;
+	color: #19486A; /* You can match your primary color scheme */
+	text-decoration: none;
+  }
+  
+  .social-media a:hover {
+	color: #26BDE2; /* Change color on hover */
+  }
+  
 
 /* Send Message Button */
 .contact-form button {
